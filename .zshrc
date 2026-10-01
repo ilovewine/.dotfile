@@ -8,7 +8,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time Oh My Zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="bira"
+ZSH_THEME="blinks" # set by `omz`
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -82,11 +82,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='nvim'
-# fi
+ if [[ -n $SSH_CONNECTION ]]; then
+   export EDITOR='vim'
+ else
+   export EDITOR='nvim'
+ fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch $(uname -m)"
@@ -123,8 +123,6 @@ eval $(thefuck --alias)
 export LDFLAGS="-L/opt/homebrew/opt/postgresql@18/lib"
   export CPPFLAGS="-I/opt/homebrew/opt/postgresql@18/include"
 
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
 fpath=(~/.daml/zsh $fpath)
 
 [ -f "/Users/mpiatkowski/.ghcup/env" ] && . "/Users/mpiatkowski/.ghcup/env" # ghcup-env
@@ -138,3 +136,15 @@ fi
 
 export JAVA_HOME=/opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk/Contents/Home
 alias config='/usr/bin/git --git-dir=/Users/mpiatkowski/.cfg/ --work-tree=/Users/mpiatkowski'
+ssh-add --apple-use-keychain ~/.ssh/digitalasset_id
+ssh-add --apple-use-keychain ~/.ssh/ilovewine_id
+export NX_PARALLEL=60%
+export PATH="/opt/homebrew/opt/postgresql@18/bin:$PATH"
+
+# pnpm
+export PNPM_HOME='/Users/mpiatkowski/Library/pnpm'
+case ":$PATH:" in
+  *":$PNPM_HOME/bin:"*) ;;
+  *) export PATH="$PNPM_HOME/bin:$PATH" ;;
+esac
+# pnpm end
