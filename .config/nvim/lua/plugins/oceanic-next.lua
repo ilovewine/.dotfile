@@ -20,8 +20,10 @@ return {
           -- Example 2: Change comment colors and make them italic
           vim.api.nvim_set_hl(0, "Comment", { fg = "#ff9e64", italic = true })
 
-          -- Example 3: Dim the line numbers
-          vim.api.nvim_set_hl(0, "LineNr", { fg = "#84b0fc" })
+          vim.api.nvim_set_hl(0, "LineNr", { fg = "#3ba4b7" })
+          vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#aeaec2" })
+
+          vim.api.nvim_set_hl(0, "CursorLine", { bg = "#e6e6e6" })
         end,
       })
     end,
