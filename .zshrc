@@ -105,12 +105,6 @@ source $ZSH/oh-my-zsh.sh
 
 export GPG_TTY=$(tty)
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-alias mk-hosting="ssh -i ~/.ssh/mk.key dm69781@dm69781.domenomania.eu"
-
 # bun completions
 [ -s "/Users/mpiatkowski/.bun/_bun" ] && source "/Users/mpiatkowski/.bun/_bun"
 
@@ -148,3 +142,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME/bin:$PATH" ;;
 esac
 # pnpm end
+
+# Vite+ bin (https://viteplus.dev)
+. "/Users/mpiatkowski/.config/vite-plus/env"

@@ -3,20 +3,22 @@
     "editor.fontSize": 14,
     "workbench.iconTheme": "vs-minimal",
     "extensions.experimental.affinity": {
-        "asvetliakov.vscode-neovim": 1
+        "asvetliakov.vscode-neovim": 1,
     },
     "git.confirmSync": false,
     "chat.tools.edits.autoApprove": {
-        "**/*": false
+        "**/*": false,
     },
     "github.copilot.enable": {
         "*": false,
         "plaintext": false,
         "markdown": false,
-        "scminput": false
+        "scminput": false,
     },
     "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
     },
-    "git.enableSmartCommit": true
+    "git.enableSmartCommit": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "oxc.oxc-vscode",
 }
