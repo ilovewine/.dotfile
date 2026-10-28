@@ -20,5 +20,8 @@
     },
     "git.enableSmartCommit": true,
     "editor.formatOnSave": true,
+    "editor.wordWrap": "on",
+    "js/ts.updateImportsOnFileMove.enabled": "always",
     "editor.defaultFormatter": "oxc.oxc-vscode",
+    "editor.wordWrapColumn": 120,
 }
