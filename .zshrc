@@ -145,3 +145,4 @@ esac
 
 # Vite+ bin (https://viteplus.dev)
 . "/Users/mpiatkowski/.config/vite-plus/env"
+export PATH=/opt/homebrew/opt/openjdk@21/bin:$PATH

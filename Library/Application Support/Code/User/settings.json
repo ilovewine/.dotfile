@@ -1,7 +1,7 @@
 {
     "workbench.colorTheme": "Light Modern",
     "editor.fontSize": 14,
-    "workbench.iconTheme": "vs-minimal",
+    "workbench.iconTheme": "vscode-icons",
     "extensions.experimental.affinity": {
         "asvetliakov.vscode-neovim": 1,
     },
@@ -24,4 +24,6 @@
     "js/ts.updateImportsOnFileMove.enabled": "always",
     "editor.defaultFormatter": "oxc.oxc-vscode",
     "editor.wordWrapColumn": 120,
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
 }
