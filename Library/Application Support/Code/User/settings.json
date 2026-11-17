@@ -27,4 +27,6 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "terminal.integrated.fontSize": 14,
+    "editor.linkedEditing": true,
+    "workbench.browser.openLocalhostLinks": false,
 }
