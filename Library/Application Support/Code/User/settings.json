@@ -29,4 +29,5 @@
     "terminal.integrated.fontSize": 14,
     "editor.linkedEditing": true,
     "workbench.browser.openLocalhostLinks": false,
+    "chat.agent.sandbox.enabled": "on",
 }
